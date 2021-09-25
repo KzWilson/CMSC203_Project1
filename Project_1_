@@ -1,0 +1,122 @@
+// Project_1_: This file contains the 'main' function. Program execution begins and ends there.
+// Class: CMSC 203
+// Instructor: Gary C. Thai
+// Project 1
+// Description : We all need internet connectivity in this age of lockdowns. 
+// What steps should you go through when you do not have connectivity?  
+// Due Date : 2021-09-17
+// I pledge that I have completed the programming assignment independently.
+// I have not copied the code from a student or any source.
+// I have not given my code to any student.
+// Print your Name here : Karen Zulay Wilson
+
+import java.util.Scanner;
+
+public class Project_1_
+{
+    public static void main(String[] args)
+    {
+    String name, decision;
+           
+    Scanner keyboard = new Scanner(System.in);
+    
+do {
+	System.out.print("\t\t**************************\n\t\t* WELCOME TO WILSONTECH!!*\n\t\t**************************\n"+
+    "\nMay I have your name please?\n");
+    name = keyboard.nextLine();
+           
+    System.out.print("Hi "+ name +", my name is Bertha and I will give you some assistance with your connectivity issues today.\n");  	
+    System.out.print("Are you experiencing connectivity issues? Please Enter Yes or No: ");
+    decision = keyboard.nextLine();
+    while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+     		{
+        	System.out.print("Please enter Yes or No: ");
+        	decision = keyboard.nextLine();
+        	}
+    
+	while (decision.equalsIgnoreCase ("No"))
+		{
+		System.out.println("\n\t\tTHANK YOU FOR USING TECHNOWILSON\n"
+		    	+"\t\tthis is Karen Wilson from Class CMSC 203 ");
+				break;
+		}
+                       
+    		if (decision.equalsIgnoreCase ("Yes"))
+    			{
+    				System.out.println("I'm sorry you are experiencing this. Let's begin the tutorial:\n"
+    									+"\n1.Reboot your computer.Did this solve the issue?\nPlease Enter Yes or No: ");
+    									decision = keyboard.nextLine(); 
+    		    						
+    						while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+    	    					{
+    	    						System.out.print("Please enter Yes or No: ");
+    	    						decision = keyboard.nextLine();
+    	    					}
+    	    				
+    					if (decision.equalsIgnoreCase ("No"))
+    					{
+    						System.out.println("\n2.Reboot your router.Did this solve the issue?\nPlease Enter Yes or No: ");
+							decision = keyboard.nextLine();
+    					}
+    						while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+    							{
+    							System.out.print("Please enter Yes or No: ");
+    							decision = keyboard.nextLine();
+    							}
+    							    						
+    						if (decision.equalsIgnoreCase ("No"))
+    						{
+    							System.out.println("\n3.Please make sure the cables for your router are plugged in firmly,"
+    												+ "and the router is receiving power. Did this solve the issue?\nPlease Enter Yes or No: ");
+													decision = keyboard.nextLine();
+    						}
+    								while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+    									{
+    										System.out.print("Please enter Yes or No: ");
+    										decision = keyboard.nextLine();
+    									}
+    							
+    							if (decision.equalsIgnoreCase ("No"))
+    							{
+    								System.out.println("\n4.Please move your computer closer to the router, and reconnect it to the internet. Did this solve the issue? Please Enter Yes or No: ");
+    									decision = keyboard.nextLine();
+    							}   							
+    								while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+    								{
+    									System.out.print("Please enter Yes or No: ");
+    									decision = keyboard.nextLine();
+    								}
+    	
+    		     if (decision.equalsIgnoreCase ("Yes"))
+    		     {
+    		    	System.out.println("\n\t\tTHANK YOU FOR USING TECHNOWILSON\n \t\tthis is Karen Wilson from Class CMSC 203 ");
+    		     }
+    								if (decision.equalsIgnoreCase ("No"))
+    								{
+    									System.out.println("\n5.Please contact the ISP");
+    									System.out.println("\n\t\t     THANK YOU FOR USING TECHNOWILSON\n \t\tthis is Karen Wilson from Class CMSC 203 ");
+    								}
+    		}
+ 
+    		
+    		System.out.println("\nWould you like to restart the program? Please Enter Yes or No: ");
+			   decision = keyboard.nextLine();
+			   
+			   while (!decision.equalsIgnoreCase("Yes") && !decision.equalsIgnoreCase("No"))
+				{
+					System.out.print("Please enter Yes or No: ");
+					decision = keyboard.nextLine();
+				}
+				
+					  
+			   		if (decision.equalsIgnoreCase ("No"))
+			   		{
+					System.out.println("\nThank you for choosing us!! Have a nice day :) ");
+			   		}
+       	
+}
+ 		while (decision.equalsIgnoreCase ("yes"));
+ keyboard.close();
+
+    }
+}
